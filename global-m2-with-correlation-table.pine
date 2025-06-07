@@ -60,7 +60,7 @@ plot(total, color=color.yellow, linewidth=2, offset=offset)
 shifted_total = request.security(syminfo.tickerid, "D", total[offset])
 
 //  Calculate correlation between `total` and the main chart's close price
-correlation_length = input.int(182, title="Custom Correlation Length", minval=1, tooltip="Length of the custom correlation period")
+correlation_length = input.int(180, title="Custom Correlation Length", minval=1, tooltip="Length of the custom correlation period")
 corr30 = math.round(ta.correlation(close, shifted_total, 30),3)*100
 corr60 = math.round(ta.correlation(close, shifted_total, 60),3)*100
 corr90 = math.round(ta.correlation(close, shifted_total, 90),3)*100
