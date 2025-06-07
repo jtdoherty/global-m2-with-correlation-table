@@ -2,7 +2,7 @@
 indicator('Global M2 with correlation table', overlay=true, scale=scale.right)
 
 // Allow configuration of the number of days to offset the M2 chart line in the indicator settings.
-offset = input.int(0, title="Time Offset (days)", minval=-1000, maxval=1000, tooltip="Days to shift M2 line forward")
+offset = input.int(70, title="Time Offset (days)", minval=-1000, maxval=1000, tooltip="Days to shift M2 line forward")
 
 
 // EUROZONE Data
